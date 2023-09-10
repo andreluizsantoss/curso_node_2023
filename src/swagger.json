@@ -1,0 +1,12 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Curso Documentation",
+    "description": "CursoI Documentation with all specifications",
+    "version": "1.0.0",
+    "contact": {
+      "name": "André Luiz",
+      "email": "andre.luiz.itape@gmail.com"
+    }
+  }
+}
