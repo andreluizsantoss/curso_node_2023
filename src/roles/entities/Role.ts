@@ -1,13 +1,18 @@
-import { v4 as uuidv4 } from 'uuid'
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
+} from 'typeorm'
 
+@Entity('roles')
 export class Role {
-  id?: string
-  name: string
-  created_at: Date
+  @PrimaryGeneratedColumn('increment')
+  id: number
 
-  constructor() {
-    if (!this.id) {
-      this.id = uuidv4()
-    }
-  }
+  @Column()
+  name: string
+
+  @CreateDateColumn()
+  created_at: Date
 }
